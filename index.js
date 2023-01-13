@@ -238,3 +238,84 @@
 // console.log(
 //   `Author name is ${authorName}, surname is ${surname} and his book is ${bookName}`
 // );
+
+// function registerGuest(name, callback) {
+//   console.log(`Your bedroom is registered on ${name}`);
+//   callback(name);
+// }
+
+// registerGuest("Maksym", function greetGuest(name) {
+//   console.log(`IT IS Nice to see you, ${name}`);
+// });
+
+// function isUniversityAvailable(name, isAvailable, notAvailable) {
+//   const grade = Math.random() > 0.5;
+//   if (grade) {
+//     isAvailable(name);
+//     return;
+//   }
+//   notAvailable(name);
+// }
+
+// function agree(name) {
+//   console.log(`You can study at our university ${name}`);
+// }
+// function disagree(name) {
+//   console.log(`Sorry, but with this grade you cannot study `);
+// }
+
+// isUniversityAvailable("Maksym", agree, disagree);
+
+// function plus(value) {
+//   console.log(value);
+// }
+// function minus(value) {
+//   console.log("minus value", value);
+// }
+// function counter(n, action) {
+//   for (let i = 0; i < n; i += 1) {
+//     action(i);
+//   }
+// }
+// counter(3, plus);
+// counter(7, minus);
+
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 25, 34, 56, 76];
+
+// numbers.forEach(function (number, index) {
+//   console.log(`The index of ${number} is ${index}`);
+// });
+
+// const names = ["MAKSYM", "DANYLO", "NIKITA", "ALYOSHA"];
+
+// names.forEach(function (name, index) {
+//   console.log(`The index of ${name} is ${index}`);
+// });
+
+// const plus = (a, b, c) => {
+//   return a + b + c;
+// };
+// console.log(plus(1, 2, 3));
+// console.log(plus(2, 3, 4));
+// console.log(plus(1000000, 2000000, 3000000));
+
+// const plus = (a, b, c) => a + b + c;
+// console.log(plus(1, 2, 3));
+// console.log(plus(100, 10000, 102));
+// console.log(plus(3, 45, 6));
+
+// const plus = (...args) => {
+//   console.log(...args);
+// };
+// plus(1, 2, 3, 4, 5, 6, 7, 8, 9);
+
+// const numbers = [3, 5, 7, 9, 1, 2, 4, 6, 8, 0];
+// const check = (number, index) => {
+//   console.log(`The index of this ${number} is ${index}`);
+// };
+// numbers.forEach(check);
+
+// const numbers = [3, 5, 7, 9, 1, 2, 4, 6, 8, 0];
+// numbers.forEach((number, index) => {
+//   console.log(`The index of this ${number} is ${index}`);
+// });

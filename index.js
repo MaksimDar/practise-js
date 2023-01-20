@@ -319,3 +319,129 @@
 // numbers.forEach((number, index) => {
 //   console.log(`The index of this ${number} is ${index}`);
 // });
+
+// function registerRoomNumber(name, callback) {
+//   console.log(`Your name is ${name} ?`);
+//   callback(name);
+// }
+
+// // Передаємо інлайн функцію greet у якості колбека
+// registerRoomNumber("Maksym", function greet(name) {
+//   console.log(`Nice to meet you, ${name}`);
+// });
+
+// // Передаємо інлайн функцію notify у якості колбека
+// registerRoomNumber("Makar", function notify(name) {
+//   console.log(`You should come at 3:30 p.m`);
+// });
+
+// function registerRestaurantTable(table, isFree, notFree) {
+//   const isPossible = Math.random() > 0.5;
+//   if (isPossible) {
+//     isFree(table);
+//     return;
+//   } else !isPossible;
+//   notFree(table);
+// }
+
+// function tableIsFree(name) {
+//   console.log(`Table is free for ${name}`);
+// }
+// function tableIsNotFree(name) {
+//   console.log(`Sorry, but there is no any free tables for ${name} `);
+// }
+
+// registerRestaurantTable("Maksym", tableIsFree, tableIsNotFree);
+
+// function plus(n) {
+//   for (let i = 0; i <= n; i += 1) {
+//     console.log(i);
+//   }
+// }
+// plus(4);
+
+// const numbers = [1, 3, 45, 63, 12, 34, 78, 564, 789, 45, 55, 66];
+
+// numbers.forEach(function (number, index) {
+//   console.log(`The index of this ${number} is ${index} `);
+// });
+
+// const tennisPlayers = [
+//   "NADAL",
+//   "DJOKOVICH",
+//   "FEDERER",
+//   "CORIC",
+//   "DOLGOPOLOV",
+//   "MURRAY",
+// ];
+
+// tennisPlayers.forEach(function (element, index) {
+//   console.log(`${element} number is ${index}`);
+// });
+
+// function add(a, b, c) {
+//   return a + b + c;
+// }
+// console.log(add(1, 3, 5));
+
+// const addElements = (a, b, c) => {
+//   return a + b + c;
+// };
+// console.log(addElements(3, 4, 3));
+
+// const addFive = (a) => {
+//   return a + 5;
+// };
+// console.log(addFive(200));
+
+// function plusElements(a, b, c) {
+//   return a + b + c;
+// }
+// console.log(plusElements(5, 5, 5));
+
+// const addSevens = (a, b, c) => a + b + c;
+// console.log(addSevens(7, 7, 7));
+
+// У стрілочних функцій немає локальної змінної arguments, що містить усі аргументи. Якщо необхідно зібрати всі аргументи в масив, використовується операція rest.
+
+// function arg(...args) {
+//   console.log(...args);
+// }
+// arg(1, 2, 3, 4);
+
+// const numbers = [5, 10, 15, 20, 25];
+// numbers.forEach((number, index) => {
+//   console.log(`Index of ${number} is ${index}`);
+// });
+
+// const numberIndex = (number, index) => {
+//   console.log(`${number}'s index is ${index}`);
+// };
+// numbers.forEach(numberIndex);
+
+// const names = ["Maksym", "Makar", "Danylo", "Anton", "Vlad"];
+// const upperNames = names.map((name) => name.toUpperCase());
+// console.log(upperNames);
+// const lowerNames = names.map((name) => name.toLowerCase());
+// console.log(lowerNames);
+
+// const rankings = [
+//   { name: "Maksym", ranking: 7.8 },
+//   { name: "Makar", ranking: 8.4 },
+//   { name: "Danylo", ranking: 5.3 },
+//   { name: "Stepan", ranking: 9.4 },
+// ];
+// const nameRanking = rankings.map((ranking) => ranking.ranking);
+// console.log(nameRanking);
+
+// const students = [
+//   { name: "maksym", languages: ["Ukrainian", "Russian", "English", "Spanish"] },
+//   { name: "Makar", languages: ["Ukrainian", "English", "Spanish"] },
+//   {
+//     name: "Mykola",
+//     languages: ["Ukrainian", "Russian", "English", "Spanish", "German"],
+//   },
+//   { name: "Tatiana", languages: ["Ukrainian", "Russian"] },
+// ];
+// const studentsLanguages = students.flatMap((student) => student.languages);
+// console.log(studentsLanguages);

@@ -445,3 +445,62 @@
 // ];
 // const studentsLanguages = students.flatMap((student) => student.languages);
 // console.log(studentsLanguages);
+
+// const uniqueLanguages = studentsLanguages.filter(
+//   (language, index, array) => array.indexOf(language) === index
+// );
+// console.log(uniqueLanguages);
+
+// const values = [-45, 678, 3, 5, 87, 12, 34, 5, -12, -400000, 7888868688, -4567];
+// const justPlusedNumbers = values.filter((value) => value >= 0);
+// console.log(justPlusedNumbers);
+// const minusNumbers = values.filter((value) => value <= 0);
+// console.log(minusNumbers);
+// const theLowestValue = values.filter((value) => value < -4567);
+// console.log(theLowestValue);
+// const theHighestValue = values.filter((value) => value > 1000000);
+// console.log(theHighestValue);
+
+// const GOOD_RANKING = 50;
+// const BAD_RANKING = 100;
+
+// const players = [
+//   { name: "Alcaraz", ranking: 1 },
+//   { name: "Nadal", ranking: 2 },
+//   { name: "Kyrgious", ranking: 22 },
+//   { name: "Kudla", ranking: 120 },
+//   { name: "Krytuh", ranking: 188 },
+// ];
+
+// const coolPlayers = players.filter((player) => player.ranking <= GOOD_RANKING);
+// console.log(coolPlayers);
+// const worsePlayers = players.filter((player) => player.ranking >= BAD_RANKING);
+// console.log(worsePlayers);
+// const findRanking = players.find((player) => player.ranking === 22);
+// console.log(findRanking);
+// const findIndex = players.findIndex((player) => player.ranking === 120);
+// console.log(findIndex);
+
+// console.log([1, 3, 4, 5, 7, 12].every((number) => number > 0));
+// console.log([1, -3, 5, 4, 67, -4].every((number) => number < 0));
+// console.log([3, 2, 1, 56, 98, 34, 54].some((number) => number <= 0));
+// console.log([1, 3, 5, 6, 9, 8, -4].some((number) => number < 0));
+
+// const rackets = [
+//   { name: "Wilson", amount: 150 },
+//   { name: "Yonex", amount: 350 },
+//   { name: "Babolat", amount: 250 },
+// ];
+
+// const everyCheck = rackets.every((racket) => racket.amount > 300);
+// const someCheck = rackets.some((racket) => racket.amount > 300);
+// console.log(everyCheck);
+// console.log(someCheck);
+
+const totalPrice = [12, 4, 3, 78, -4, -67, 87].reduce(
+  (previousValue, number) => {
+    return previousValue + number;
+  },
+  0
+);
+console.log(totalPrice);
